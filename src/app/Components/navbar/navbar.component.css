@@ -1,0 +1,339 @@
+/* #nav {
+    background-color: #111;
+    color: white;
+     padding: 20px 50px; 
+    }
+    
+    .navTop {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    }
+    
+    .search {
+    display: flex;
+    align-items: center;
+    background-color: gray;
+    padding: 10px 20px;
+    border-radius: 10px;
+    }
+    
+    .searchInput {
+    border: none;
+    background-color: transparent;
+    }
+    
+    .searchInput::placeholder {
+    color: lightgray;
+    }
+    
+    .limitedOffer {
+    font-size: 20px;
+    border-bottom: 2px solid green;
+    cursor: pointer;
+    }
+    
+    .navBottom {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+    
+    .menuItem {
+    margin-right: 50px;
+    cursor: pointer;
+    color: lightgray;
+    font-weight: 400;
+    }
+     */
+/* sticky navbar */
+/* .container {
+        height: 100px;
+        padding: 0px 50px;
+        background-color: #d1411e;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: sticky;
+        top: 0;
+        z-index: 999;
+      }
+      
+      .item {
+        flex: 1;
+        display: flex;
+        align-items: center;
+      }
+      
+      .item:nth-child(2) {
+        flex: 3;
+      }
+      
+      .item:last-child {
+        justify-content: flex-end;
+      }
+      
+      .callButton {
+        background-color: #ebd9d4;
+        border-radius: 50%;
+        padding: 10px;
+        width: 30px;
+        height: 30px;
+      }
+      
+      .texts {
+        margin-left: 20px;
+        color: white;
+      }
+      
+      .text:first-child {
+        font-size: 12px;
+        font-weight: 500;
+      }
+      
+      .text:last-child {
+        font-size: 20px;
+        font-weight: bold;
+      }
+      
+      .list {
+        padding: 0;
+        display: flex;
+        align-items: center;
+        list-style: none;
+        color: white;
+      }
+      
+      .listItem {
+        margin: 20px;
+        font-weight: 500;
+      }
+      
+      .cart{
+          position: relative;
+      }
+      
+      .counter{
+          position: absolute;
+          top: -10px;
+          right: -10px;
+          width: 15px;
+          height: 15px;
+          border-radius: 50%;
+          background-color: white;
+          padding: 3px;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-weight: bold;
+          color: #d1411e;
+      }
+      
+      @media screen and (max-width:480px) {
+        .item:nth-child(2) {
+          display: none;
+        }
+      
+        .item:nth-child(1) {
+          flex: 3;
+        }
+      }     */
+
+/*image*/
+/* .top {
+        width: 100%;
+        height: 50px;
+        background-color: rgb(190, 143, 143);
+        position: sticky;
+        top: 0;
+        display: flex;
+        align-items: center;
+        z-index: 999;
+        font-family: "Josefin Sans", sans-serif;
+      }
+      
+      .topLeft,
+      .topRight {
+        flex: 3;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+      
+      .topIcon {
+        font-size: 20px;
+        margin-right: 10px;
+        color: #444;
+        cursor: pointer;
+      }
+      
+      .topCenter {
+        flex: 6;
+      }
+      
+      .topList {
+        display: flex;
+        justify-content: center;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+      
+      .topListItem {
+        margin-right: 20px;
+        font-size: 18px;
+        font-weight: 300;
+        cursor: pointer;
+      }
+      
+      .topListItem:hover{
+          color: gray;
+      }
+      
+      .topImg {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-right: 15px;
+        cursor: pointer;
+      }
+      
+      .topSearchIcon {
+        font-size: 18px;
+        color: #666;
+        cursor: pointer;
+      } */
+
+.container {
+  height: 50px;
+  background-color: black;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 20px;
+  font-size: 20px;
+}
+
+.listItems {
+  display: inline;
+
+  margin-right: 20px;
+  color: lightgray;
+  font-size: 14px;
+}
+
+.lintItem {
+  color: white;
+  text-decoration: none;
+  text-decoration-color: none;
+  text-decoration-line: none;
+}
+.hamburger {
+  display: none;
+  width: 25px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.line {
+  width: 100%;
+  height: 3px;
+  background-color: white;
+}
+
+.menu {
+  display: none;
+  position: fixed;
+  width: 50vw;
+  height: calc(100vh - 50px);
+  background-color: black;
+  top: 50px;
+  /* right: 0px; */
+  z-index: 9999;
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  color: lightgray;
+  list-style: none;
+  transition: all 1s ease;
+}
+
+@media screen and (max-width: 480px) {
+  .container {
+    padding: 0px 20px;
+  }
+
+  .listItems {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+  }
+  .menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    right: 0;
+    position: fixed;
+  width: 50vw;
+  height: calc(100vh - 50px);
+  background-color: black;
+  top: 50px;
+  /* right: 0px; */
+  z-index: 9999;
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  color: lightgray;
+  list-style: none;
+  transition: all 1s ease;
+  }
+
+}
+@media screen and (max-width: 768px) {
+  .container {
+    padding: 0px 20px;
+  }
+
+  .listItems {
+    display: none;
+  }
+
+  .hamburger {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+
+  }
+  .menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    right: 0;
+    position: fixed;
+  width: 40vw;
+  height: calc(100vh - 50px);
+  background-color: black;
+  top: 50px;
+  /* right: 0px; */
+  z-index: 9999;
+  margin: 0;
+  padding: 0;
+  font-weight: bold;
+  color: lightgray;
+  list-style: none;
+  transition: all 1s ease;
+  }
+
+}
+
